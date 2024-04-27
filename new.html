@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="new.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="new.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+
+  <body>
+    <h1>newjubfiofeofn</h1>
     <div class="hero">
-        <div class="card">
-            <h1>Elon musk</h1>
-            <img src="images/profile.png" id="profile-pic">
-            <label for="input-file">Uplod Image</label>
-            <input type="file" accept="image/jpeg,image/png,image/jpg" id="input-file">
-        </div>
+      <div class="card">
+        <h1>Elon musk</h1>
+        <img src="images/profile.png" id="profile-pic" />
+        <label for="input-file">Uplod Image</label>
+        <input
+          type="file"
+          accept="image/jpeg,image/png,image/jpg"
+          id="input-file"
+        />
+      </div>
     </div>
     <script>
-        let profilePic = document.getElementById("profile-pic");
-        let inputFile = document.getElementById("input-file");
+      let profilePic = document.getElementById("profile-pic");
+      let inputFile = document.getElementById("input-file");
 
-        inputFile.onchange = function(){
-            profilePic.src = URL.createObjectURL(inputFile.files[0]);
-        }
+      inputFile.onchange = function () {
+        profilePic.src = URL.createObjectURL(inputFile.files[0]);
+      };
     </script>
-</body>
+  </body>
 </html>
